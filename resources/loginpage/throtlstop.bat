@@ -1,0 +1,1 @@
+start "C:\Users\Tanmya\Downloads\ThrottleStop_8.70.6" ThrottleStop.exe

@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>
+            Login Page
+        </title>
+        <link rel="stylesheet" href="logstyle.css">  
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Montserrat&display=swap" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css?family=Advent+Pro|Montserrat|Poiret+One&display=swap" rel="stylesheet"> 
+        <script src="jquery-3.4.1.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Bangers" rel="stylesheet">
+    </head>
+        <body>
+            <div class="modal" id="modal-login">
+            <div class="back">
+                <div class="cover">
+                    <div class="box" id="login">
+                        <img src="dp2.png" class="dp">
+                        <div class="top_name">
+                            <strong>Login</strong>
+                            
+                        </div>
+                
+                        <div class="frm">
+                            <form id="logfrm">
+                                <br>
+                                <br> 
+                                <p><div class="user">Username</div></p>
+                                <input type="text" name="" placeholder="Enter Username" id="uf">
+                                <br>
+                                <br>
+                                <br>
+                                <p><div class="pass">Password</div></p>
+                                <input type="password" name="" placeholder="Enter Password" id="pf">
+                                <p></p>
+                                <br>
+                                <input  onclick="history.back()" type="submit" name="" value="Login">
+                                <p></p>
+                                <br>
+                                <br>
+                                <a href="register.html">Don't have an account, Register here</a>
+                            </form> 
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            </div>
+                            <!-- The core Firebase JS SDK is always required and must be listed first -->
+                            <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+                            <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-auth.js"></script>
+                            <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+
+                            <!-- TODO: Add SDKs for Firebase products that you want to use
+                                https://firebase.google.com/docs/web/setup#available-libraries -->
+
+                            <script>
+                            // Your web app's Firebase configuration
+                            var firebaseConfig = {
+                                apiKey: "AIzaSyC7QHGBDsZn-uZWh_kBd_CjPqHa3yzAvYc",
+                                authDomain: "coronatracker-f7d2f.firebaseapp.com",
+                                databaseURL: "https://coronatracker-f7d2f.firebaseio.com",
+                                projectId: "coronatracker-f7d2f",
+                                storageBucket: "coronatracker-f7d2f.appspot.com",
+                                messagingSenderId: "663397556706",
+                                appId: "1:663397556706:web:4197c45100a626d3c119bb"
+                            };
+                            // Initialize Firebase
+                            firebase.initializeApp(firebaseConfig);
+                               // make auth and firestore references
+                            const auth = firebase.auth();
+                            const db = firebase.firestore();
+                            db.settings({ timestampsInSnapshots: true });
+                            </script>
+
+
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="scripts/auth.js"></script>
+        <script src="scripts/index.js"></script>
+ 
+    </body>
+</html>
